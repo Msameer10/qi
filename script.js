@@ -132,7 +132,7 @@ const quizzes = [
                 correctAnswer: 3
             },
             {
-                question: "Who led Abbasid\'s conquest of Iberian Peninsula?",
+                question: "Who led Abbasid Caliphate\'s conquest of Iberian Peninsula?",
                 options: ["Khalid ibn Al-Walid", "Tariq bin Zayed", "Salah ad-Din"],
                 correctAnswer: 1
             },
