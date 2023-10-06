@@ -153,7 +153,7 @@ const quizzes = [
             },
             {
                 question: "Who 'unified' England for the first time?",
-                options: ["Athelsthan", "Alfred the Great", "Edward I", "Williams II"],
+                options: ["Æthelstan", "Alfred the Great", "Edward I", "Æthelwulf"],
                 correctAnswer: 0
             }
         ]
