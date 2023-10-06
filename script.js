@@ -150,6 +150,11 @@ const quizzes = [
                 question: "Who was the founder of the Achaemenid Empire (Persian Empire) and is known for his vast territorial conquests?",
                 options: ["Darius the Great", "Cyrus the Great", "Xerxes I", "Artaxerxes I"],
                 correctAnswer: 1
+            },
+            {
+                question: "Who 'unified' England for the first time?",
+                options: ["Athelsthan", "Alfred the Great", "Edward I", "Williams II"],
+                correctAnswer: 0
             }
         ]
     },
