@@ -4,7 +4,7 @@ let score = 0;
 
 const quizzes = [
     {
-        name: "Quiz 1", //Quiz 0
+        name: "History", //Quiz 0
         questions: [
             {
                 question: "What ancient writing system used pictorial symbols and was primarily associated with ancient Egypt?",
@@ -13,7 +13,7 @@ const quizzes = [
             },
             {
                 question: "Who is considered the father of modern medicine?",
-                options: ["Hippocrates", "Aristotle", "Aristotle", "Plato"],
+                options: ["Hippocrates", "Aristotle", "Socrates", "Plato"],
                 correctAnswer: 0
             },
             {
@@ -118,7 +118,7 @@ const quizzes = [
             },
             {
                 question: "Which Italian artist is famous for painting the \"Mona Lisa\" and \"The Last Supper\"?",
-                options: ["Michelangelo", "Leonardo da Vinci"],
+                options: ["Michelangelo", "Leonardo da Vinci", "Vincent van Gogh", "Picasso"],
                 correctAnswer: 1
             },
             {
@@ -132,7 +132,7 @@ const quizzes = [
                 correctAnswer: 3
             },
             {
-                question: "Who led Abbasid Caliphate\'s conquest of Iberian Peninsula?",
+                question: "Who led the conquest of Iberian Peninsula during Abbasid Caliphate?",
                 options: ["Khalid ibn Al-Walid", "Tariq bin Zayed", "Salah ad-Din"],
                 correctAnswer: 1
             },
@@ -152,14 +152,212 @@ const quizzes = [
                 correctAnswer: 1
             },
             {
-                question: "Who 'unified' England for the first time?",
+                question: "Who 'unified' Wessex, Mercia and Northumbria under the banner of England for the first time?",
                 options: ["Æthelstan", "Alfred the Great", "Edward I", "Æthelwulf"],
                 correctAnswer: 0
             }
         ]
     },
+
     {
-        name: "Random", //Quiz 1
+name: "Science I", //Quiz 1
+questions: [
+{
+    question: "What is the chemical symbol for gold?",
+    options: ["Go", "Au", "Gl", "Ag"],
+    correctAnswer: 1
+},
+{
+    question: "Which planet is known as the 'Red Planet'?",
+    options: ["Venus", "Jupiter", "Mars", "Saturn"],
+    correctAnswer: 2
+},
+{
+    question: "What is the atomic number of carbon?",
+    options: ["6", "12", "14", "8"],
+    correctAnswer: 0
+},
+{
+    question: "Which gas do plants absorb from the atmosphere during photosynthesis?",
+    options: ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+    correctAnswer: 1
+},
+{
+    question: "What is the SI unit of electric current?",
+    options: ["Watt", "Volt", "Ampere", "Ohm"],
+    correctAnswer: 2
+},
+{
+    question: "Which of the following is a greenhouse gas?",
+    options: ["Nitrogen", "Oxygen", "Carbon dioxide", "Helium"],
+    correctAnswer: 2
+},
+{
+    question: "What is the largest organ in the human body?",
+    options: ["Liver", "Brain", "Skin", "Heart"],
+    correctAnswer: 2
+},
+{
+    question: "Which gas is responsible for the blue color of the Earth's sky?",
+    options: ["Oxygen", "Carbon dioxide", "Nitrogen", "Ozone"],
+    correctAnswer: 2
+},
+{
+    question: "What is the chemical formula for water?",
+    options: ["CO2", "H2O", "O2", "NaCl"],
+    correctAnswer: 1
+},
+{
+    question: "Which subatomic particle carries a positive electric charge?",
+    options: ["Neutron", "Proton", "Electron", "Photon"],
+    correctAnswer: 1
+},
+{
+    question: "What is the process by which plants make their own food using sunlight?",
+    options: ["Respiration", "Fermentation", "Photosynthesis", "Digestion"],
+    correctAnswer: 2
+},
+{
+    question: "What is the chemical symbol for iron?",
+    options: ["Fe", "Ir", "In", "I"],
+    correctAnswer: 0
+},
+{
+    question: "What is the unit of measurement for frequency?",
+    options: ["Watt", "Hertz", "Volt", "Ampere"],
+    correctAnswer: 1
+},
+{
+    question: "What is the study of the Earth's atmosphere and weather patterns called?",
+    options: ["Geology", "Biology", "Meteorology", "Astronomy"],
+    correctAnswer: 2
+},
+{
+    question: "Which gas do humans inhale for respiration?",
+    options: ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+    correctAnswer: 0
+},
+{
+    question: "What is the chemical formula for methane?",
+    options: ["CH4", "CO2", "H2O", "NH3"],
+    correctAnswer: 0
+},
+{
+    question: "Which planet in our solar system has the most moons?",
+    options: ["Earth", "Jupiter", "Saturn", "Uranus"],
+    correctAnswer: 1
+},
+{
+    question: "What is the process by which heat is transferred through direct contact of particles?",
+    options: ["Convection", "Conduction", "Radiation", "Reflection"],
+    correctAnswer: 1
+},
+{
+    question: "Which element is the most abundant in Earth's crust?",
+    options: ["Iron", "Silicon", "Oxygen", "Aluminum"],
+    correctAnswer: 2
+},
+{
+    question: "What is the chemical symbol for sodium?",
+    options: ["Na", "So", "Sn", "Sd"],
+    correctAnswer: 0
+},
+{
+    question: "What is the unit of measurement for electric resistance?",
+    options: ["Watt", "Volt", "Ampere", "Ohm"],
+    correctAnswer: 3
+},
+{
+    question: "What is the process by which water vapor changes into liquid water called?",
+    options: ["Evaporation", "Condensation", "Precipitation", "Sublimation"],
+    correctAnswer: 1
+},
+{
+    question: "Which gas is responsible for the greenhouse effect on Earth?",
+    options: ["Oxygen", "Carbon dioxide", "Nitrogen", "Helium"],
+    correctAnswer: 1
+},
+{
+    question: "What is the SI unit of energy?",
+    options: ["Watt", "Joule", "Volt", "Ampere"],
+    correctAnswer: 1
+},
+{
+    question: "Which gas is released during photosynthesis as a byproduct?",
+    options: ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+    correctAnswer: 0
+},
+{
+    question: "What is the chemical formula for sulfuric acid?",
+    options: ["SO2", "H2SO4", "HCl", "NaOH"],
+    correctAnswer: 1
+},
+{
+    question: "What is the study of the interactions between living organisms and their environment called?",
+    options: ["Geology", "Biology", "Ecology", "Chemistry"],
+    correctAnswer: 2
+},
+{
+    question: "What is the unit of measurement for electric voltage?",
+    options: ["Watt", "Hertz", "Volt", "Ampere"],
+    correctAnswer: 2
+},
+{
+    question: "Which gas is used for extinguishing fires due to its non-reactive properties?",
+    options: ["Oxygen", "Carbon dioxide", "Nitrogen", "Argon"],
+    correctAnswer: 3
+},
+{
+    question: "Which subatomic particle orbits the nucleus of an atom?",
+    options: ["Neutron", "Proton", "Electron", "Photon"],
+    correctAnswer: 2
+},
+{
+    question: "Which gas is responsible for the greenhouse effect on Venus, making it one of the hottest planets in our solar system?",
+    options: ["Oxygen", "Carbon dioxide", "Nitrogen", "Methane"],
+    correctAnswer: 1
+},
+{
+    question: "What is the chemical formula for ammonia?",
+    options: ["CO2", "H2O", "O2", "NH3"],
+    correctAnswer: 3
+},
+{
+    question: "Which planet is known for its beautiful rings made primarily of ice particles?",
+    options: ["Earth", "Jupiter", "Saturn", "Uranus"],
+    correctAnswer: 2
+},
+{
+    question: "What is the process by which heat is transferred in the form of electromagnetic waves, such as from the Sun to the Earth?",
+    options: ["Convection", "Conduction", "Radiation", "Reflection"],
+    correctAnswer: 2
+},
+{
+    question: "Which element is commonly used as a coolant in nuclear reactors?",
+    options: ["Iron", "Silicon", "Oxygen", "Helium"],
+    correctAnswer: 3
+},
+{
+    question: "What is the chemical symbol for potassium?",
+    options: ["K", "Po", "Pt", "Pb"],
+    correctAnswer: 0
+},
+{
+    question: "What is the unit of measurement for electric power?",
+    options: ["Watt", "Joule", "Volt", "Ampere"],
+    correctAnswer: 0
+},
+{
+    question: "Which gas is released during respiration as a byproduct?",
+    options: ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+    correctAnswer: 1
+},
+
+]
+},
+
+    {
+        name: "Random", //Quiz 2
         questions: [
             {
                 question: "Using which platform, can you board the Hogwarts Express?",
