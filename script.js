@@ -608,13 +608,16 @@ function checkAnswer(selectedOptionIndex) {
 function finishQuiz() {
     document.querySelector('.quiz-container').style.display = 'none';
     document.querySelector('.result').style.display = 'block';
-    
+
     const percentage = (score / currentQuiz.questions.length) * 100;
     const grade = calculateGrade(percentage);
-    
+    const correctAnswers = score;
+
     document.getElementById('result-text').textContent = `You Scored ${percentage.toFixed(1)}%`;
     document.getElementById('grade-text').textContent = `Your Grade is ${grade}`;
+    document.getElementById('correct-answers-text').textContent = `You answered ${correctAnswers} out of ${currentQuiz.questions.length} questions correctly.`;
 }
+
 
 function calculateGrade(percentage) {
     if (percentage >= 80) {
