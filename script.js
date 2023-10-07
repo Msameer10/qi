@@ -587,7 +587,7 @@ function calculateScoreAndDisplayResults() {
         } else {
             resultItem.textContent += "Incorrect";
             const explanation = document.createElement("p");
-            explanation.textContent = `Explanation: ${ques.explanation}`;
+            explanation.textContent = `${ques.explanation}`;
             resultItem.appendChild(explanation);
         }
         resultsList.appendChild(resultItem);
@@ -611,3 +611,14 @@ function startTimer() {
         }
     }, 1000);
 }
+
+
+// Get the paragraph element by its ID
+const reloadParagraph = document.getElementById("reload-paragraph");
+
+// Add a click event listener to the paragraph
+reloadParagraph.addEventListener("click", () => {
+    // Reload the page when the paragraph is clicked
+    location.reload();
+});
+

@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
 @font-face {font-family: Heorot;src: url('heorot-font/Heorot-4rLK.ttf');}
 
 
@@ -16,6 +17,10 @@ body{
 h1{
   font-size: 3.4rem;
   font-family: Heorot;
+}
+
+h1:hover {
+  font-family: 'Gabarito';
 }
 
 h2{
