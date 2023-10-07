@@ -14,32 +14,12 @@ body{
 }
 
 h1{
-  font-family: Heorot;
   font-size: 3.4rem;
+  font-family: Heorot;
 }
 
 h2{
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-}
-
-.quiz_select_title{
-  font-family: 'Fira Mono';
-}
-
-.quiz-container {
-    text-align: center;
-    margin: 20px;
-}
-
-.question {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 20px;
-}
-
-#question-text{
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 button {
@@ -47,43 +27,8 @@ button {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
-    background-color: #E5E7E9;
-    color: #000000;
-}
-
-.quiz-button{
-    font-size: 1.3rem;
-}
-
-.result {
-    display: none;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.result p{
-  font-size: 2.4em;
-  font-family: 'Urbanist';
-}
-
-#correct-answers-text{
-  font-family: 'Fira Mono';
-  font-size: 1.5em;
-}
-
-/* CSS for the line chart */
-.line-chart {
-    height: 40px; /* Increase the height as needed */
-    background-color: #4CAF50;
-    margin: 20px auto; /* Adjust the margin as needed */
-    width: 0; /* Start with 0 width */
-    transition: width 2s; /* Animation for filling the line */
-}
-
-
-
-.grade {
-    font-weight: bold;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 

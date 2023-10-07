@@ -20,49 +20,43 @@
 </head>
 <body>
     <h1 class="text-center mt-5">Quaestus Intelligentiae</h1>
-    <div class="container">
-        <div class="quiz-selection mt-5">
-            <h3 class="text-center" class="quiz_select_title">Select a Quiz</h3>
-            <div class="container text-center mt-5 pt-5">
-            <button class="quiz-button" onclick="startQuiz(0)">History</button>
-            <button class="quiz-button" onclick="startQuiz(1)">Science I</button>
-            <button class="quiz-button" onclick="startQuiz(2)">Random</button>
-            <button class="quiz-button" onclick="startQuiz(3)">Big Bang Theory (TV Series)</button>
-            <!-- Add more quiz buttons as needed -->
-            </div>
-        </div>
+<div class="container text-center mt-5">
+<!-- Quiz selection -->
+    <div id="quiz-selection">
+        <h2>Select a Quiz</h2><div class="mt-5"></div>
+        <button id="quiz1-btn">History</button>
+        <button id="quiz2-btn">Science I</button>
+        <button id="quiz3-btn">Random</button>
+        <button id="quiz1-btn">The Big Bang Theory</button>
+        <!-- Add more buttons for other quizzes -->
+    </div>
 
+    <!-- Difficulty selection -->
+    <div id="difficulty-selection" style="display: none;">
+        <h2>Select Difficulty</h2><div class="mt-5"></div>
+        <button id="easy-btn">Easy</button>
+        <button id="hard-btn">Hard</button>
+    </div>
 
-        <div class="quiz-container mt-5" style="display: none;">
-            <h2 class="text-center" id="quiz-name">Quiz</h2>
-            <div class="question-counter mt-4">
-                <p id="question-counter-text">Question 1 of 1</p>
-            </div>
-
-
-            <div class="question mt-4">
-                <p id="question-text">Questions</p>
-                <div id="answer-options">
-                    <!-- Answer options will be added dynamically here -->
-                </div>
-            </div>
-        </div>
-
-        <div class="result mt-5" style="display: none;">
-            <h2 class="text-center">Result</h2>
-            <p class="text-center mt-5" id="result-text"></p>
-            <p class="text-center mt-5" id="grade-text"></p>
-            <p class="text-center mt-5" id="correct-answers-text"></p>
-
-
-            <!-- "Back to Quiz Selection" button -->
-        <div id="reload-link" style="text-decoration: none; margin-top: 40px; font-size: 1.3rem;"><< Back to Quiz Selection ?</div>
+    <!-- Quiz content -->
+    <div id="quiz-container" style="display: none;">
+        <p id="timer"></p>
+        <h5>Question <span id="question-num"></span> of <span id="total-questions"></span></h5>
+        <h4 id="question-text" class="mt-5"></h4>
+        <div id="options" class="btn-group-vertical mt-3" role="group">
+            <!-- Add answer options dynamically using JavaScript -->
         </div>
     </div>
 
-    <script type="text/javascript" src="script.js"></script>
+    <!-- Quiz results -->
+    <div id="quiz-results" style="display: none;">
+        <h2 class="mt-5">Quiz Results</h2>
+        <p class="h4 mt-5">Your Score: <span id="score"></span></p>
+        <!-- Display correct/incorrect answers and explanations -->
+    </div>
+</div>
 
-    <div class="footer" style="margin-top: 22vh">
+    <div class="footer" style="margin-top: 28vh">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -76,7 +70,7 @@
         </div>
     </div>
 
-    <script>
+    <script src="script.js">
         document.addEventListener("DOMContentLoaded", function () {
             const currentYear = new Date().getFullYear();
             const copyrightYearElement = document.getElementById("cprtxt");
